@@ -1,0 +1,69 @@
+/* SearchResultsPage.css */
+.search-results-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-image: url('../Images/image1.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-height: 100vh;
+    overflow-y: auto;
+    position: relative;
+  }
+  
+  /* Style for search terms box */
+  .search-terms-box {
+    flex-basis: 100%; /* Make the box occupy full width */
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Set the width to 90% */
+    max-width: 800px; /* Set a maximum width for the box */
+  }
+  
+  /* Style for the search terms paragraph */
+  .search-terms-text {
+    font-size: 20px; /* Slightly bigger font size */
+    font-weight: bold; /* Make it bold */
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .showing-results-text {
+    font-size: 27px; /* Slightly bigger font size for this part */
+    font-weight: bolder;
+  }
+  
+  /* Style for search result boxes */
+  .search-result-box {
+    flex-basis: calc(50% - 10px);
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Set the width to 90% */
+    max-width: 600px; /* Set a maximum width for the boxes */
+  }
+  
+  /* Style for name, rent, place, and rating */
+  .search-result-details {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+  }
+
+  .listing-picture {
+    width: 150px;   /* Set a specific width for the image */
+    height: 100px;  /* Set a specific height for the image */
+    object-fit: cover; /* Maintain aspect ratio and cover container */
+    display: block;
+    margin: 10px 0;
+  }
+  
