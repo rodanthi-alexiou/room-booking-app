@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import './SearchResultsPage.css';
+import './ListingDetailPage.css';
 
 function ListingDetailPage() {
-  const { listingId } = useParams(); // Get the dynamic listingId parameter from the route
-  const [listingDetails, setListingDetails] = useState({}); // State to store fetched listing details
+  const { listingId } = useParams();
+  const [listingDetails, setListingDetails] = useState({});
 
   useEffect(() => {
     // Fetch the listing details using listingId
@@ -12,15 +12,14 @@ function ListingDetailPage() {
       .then(response => response.json())
       .then(data => setListingDetails(data))
       .catch(error => console.error('Error fetching listing details:', error));
-  }, [listingId]); // Fetch when listingId changes
+  }, [listingId]);
 
   return (
-    <div className="search-results-container">
-      <div className="search-terms-box">
+    <div className="listing-detail-container">
+      <div className="listing-details">
         <h2>Listing Details</h2>
         <p>Listing ID: {listingId}</p>
-        {/* Display other listing details here */}
-        <p>Name: {listingDetails.name}</p>
+        <h2>Name: {listingDetails.name}</h2>
         <p>Description: {listingDetails.description}</p>
         {/* Display other listing details */}
       </div>
@@ -29,4 +28,5 @@ function ListingDetailPage() {
 }
 
 export default ListingDetailPage;
+
 
