@@ -1,0 +1,33 @@
+ .listing-detail-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('../Images/image1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 20px;
+  }
+  
+  .listing-details {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+  }
+  
+  .listing-details h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .listing-details p {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+ 
+  
