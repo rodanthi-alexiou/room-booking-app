@@ -59,11 +59,25 @@
     color: #333;
   }
 
+  .search-result-details h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .search-result-details p {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
   .listing-picture {
-    width: 150px;   /* Set a specific width for the image */
-    height: 100px;  /* Set a specific height for the image */
-    object-fit: cover; /* Maintain aspect ratio and cover container */
+    width: 350px;   /* Set a specific width for the image */
+    height: 300px;  /* Set a specific height for the image */
+    object-fit: fill; /* Maintain aspect ratio and cover container */
     display: block;
     margin: 10px 0;
+    /* put in the center */
+    margin-left: auto;
+    margin-right: auto;
+
   }
   

@@ -4,6 +4,7 @@ import LoginPage from './components/LoginPage';
 import SearchPage from './components/SearchPage';
 import SearchResultsPage from './components/SearchResultsPage'; 
 import ListingDetailPage from './components/ListingDetailPage'; 
+import UserProfilePage from './components/UserProfilePage';
 
 
 function AppRoutes() {
@@ -14,6 +15,7 @@ function AppRoutes() {
         <Route path="/search" element={<SearchPage />} />
         <Route path="/results" element={<SearchResultsPage />} />
         <Route path="/listings/:listingId" element={<ListingDetailPage />} /> {/* Dynamic route */}
+        <Route path="/user/:userId" element={<UserProfilePage />} /> {/* Dynamic route */}
       </Routes>
     </Router>
   );

@@ -37,11 +37,12 @@ function SearchResultsPage() {
       {listings.map((listing, index) => (
         <div key={listing.listingId}  className="search-result-box">
           <Link to={`/listings/${listing.listingId}`}>
-            <img src={listing.picture_url} className="listing-picture" alt={listing.name} />
+          <img src={listing.pictureUrl} className="listing-picture" alt={listing.name} />
+          
+          <br />
+          <p>{listing.name}</p>
+          <br />
           </Link>
-          <br />
-          {listing.name}
-          <br />
           {listing.description}
           <br />
           {listing.price}
